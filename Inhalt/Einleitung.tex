@@ -1,0 +1,86 @@
+% !TEX root = ../Projektdokumentation.tex
+\section{Einleitung}
+\label{sec:Einleitung}
+
+
+\subsection{Projektumfeld} 
+\label{sec:Projektumfeld}
+
+Die \DRV ist ein bundesweit tätiger Träger der gesetzlichen Rentenversicherung in der Bundesrepublik Deutschland
+mit \ca 17000 Mitarbeitern.\\
+Zum Aufgabenfeld zählen:
+\begin{itemize}
+	\item Bearbeitung von Rentenanträgen
+	\item Überprüfung von Sozialabgaben auf Richtigkeit
+	\item Beratung zu gesetzlichen Pflichten und Rechten
+\end{itemize}
+
+Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendung, um diesen Prozess elektronisch zu vereinfachen.
+
+\CBPNB ist eine Desktopanwendung, mit der Differenzen bei den Sozialabgaben von Betrieben berechnet werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
+\CBPAD ist eine Desktopanwendung. mit der jeweilige benötigte Dokumente, Anlagen und Schreiben für Betriebsprüfung erzeugt werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
+% WWindowsForms-UserInterface erklären?
+% CBPAD und CBPNB so lassen?
+
+\subsection{Projektziel} 
+\label{sec:Projektziel}
+
+Der Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die mit Daten von Berechnungen aus der Anwendung \CBPNB befüllt werden. Wenn in dieser Daten verändert werden, die schon in erzeugten Dokumenten vorkommen, sind diese Dokumente in einem „asynchronen“ Zustand und müssen vor Weiterverwendung aktualisiert werden. Zurzeit ist es nur möglich einzelne Dokumenttypen zu aktualisieren.
+
+Daher soll im Hauptmenü der \CBPAD ein neuer Menüeintrag bereitgestellt werden, dessen Kommando einen Aktualisierungsprozess anstößt, der alle Dokumente auf Asynchronität prüft und anschließend veraltete aktualisiert.
+
+Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Strukturen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine Struktur umgebaut werden.
+
+Erzeugungsstrukturen für einige Dokumenttypen berechnen ihren Fortschritt eigenständig und geben diesen in eigenen Fenstern aus. Für diese soll eine Möglichkeit der Unterdrückung dieser Fortschrittsausgabe implementiert werden, damit der Aktualisierungsprozess „Globales Aktualisieren“ dies einheitlich für alle Dokumenttypen ausgeben kann.
+
+
+\subsection{Projektbegründung} 
+\label{sec:Projektbegruendung}
+
+Durch diese Erweiterung wird eine Vereinheitlichung der Dokumentenaktualisierung erreicht, die zugleich eine erhebliche Vereinfachung für den Anwender mit sich bringt.
+
+
+\subsection{Projektschnittstellen} 
+\label{sec:Projektschnittstellen}
+
+Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über eine \acs{HTTP}-\acs{API} der \CBPNB angefordert.
+
+Die Benutzer der Anwendung sind die Betriebsprüfer der \DRV.
+
+
+\subsection{Projektabgrenzung} 
+\label{sec:Projektabgrenzung}
+
+Dieses Projekt zur Erweiterung der \CBPAD ist unabhängig von der Entwicklung der \CBPNB, da nur bereits festgelegte Schnittstellen zum Datenaustausch benutzt werden und keine Änderung dieser notwendig sind.
+
+
+%ProjektUmfeld
+%\begin{itemize}
+%	\item Kurze Vorstellung des Ausbildungsbetriebs (Geschäftsfeld, Mitarbeiterzahl \usw)
+%	\item Wer ist Auftraggeber/Kunde des Projekts?
+%\end{itemize}
+
+%ProjektZiel
+%\begin{itemize}
+%	\item Worum geht es eigentlich?
+%	\item Was soll erreicht werden?
+%\end{itemize}
+
+%ProjektBegründung
+%\begin{itemize}
+%	\item Warum ist das Projekt sinnvoll (\zB Kosten- oder Zeitersparnis, weniger Fehler)?
+%	\item Was ist die Motivation hinter dem Projekt?
+%\end{itemize}
+
+%ProjektSchnittstellen
+%\begin{itemize}
+%	\item Mit welchen anderen Systemen interagiert die Anwendung (technische Schnittstellen)?
+%	\item Wer genehmigt das Projekt \bzw stellt Mittel zur Verfügung? 
+%	\item Wer sind die Benutzer der Anwendung?
+%	\item Wem muss das Ergebnis präsentiert werden?
+%\end{itemize}
+
+%ProjektAbgrenzung
+%\begin{itemize}
+%	\item Was ist explizit nicht Teil des Projekts (\insb bei Teilprojekten)?
+%\end{itemize}

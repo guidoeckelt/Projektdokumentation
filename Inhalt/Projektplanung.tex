@@ -1,0 +1,105 @@
+% !TEX root = ../Projektdokumentation.tex
+
+\newpage
+\section{Projektplanung} 
+\label{sec:Projektplanung}
+
+
+\subsection{Projektphasen}
+\label{sec:Projektphasen}
+
+Die (Vorbereitungs-)Projektphase begann am 17.10.2016 und endete am 16.12.2016.
+Die tägliche Arbeitszeit betrug 7 Stunden 48 Minuten mit 30 Minuten Mittagspause.
+Die Projektarbeit fand nicht durchgängig statt, da Betriebsinterne Ereignis berücksichtigt werden müssen.
+
+\tabelle{Zeitplanung}{tab:Zeitplanung}{Zeitplanung}
+
+Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
+
+\subsection{Abweichungen vom Projektantrag}
+\label{sec:AbweichungenProjektantrag}
+
+Entwurfsphase mit 5 Stunden ist dazu gekommen, da eine Planung her muss.
+
+Implementierungsphase ist daher um gleiche Zeitspanne verringert.  % AAbweichungen vervollständigen
+
+\subsection{Ressourcenplanung}
+\label{sec:Ressourcenplanung}
+
+Benötigte Ressourcen: % AAuflisten?
+\begin{itemize}
+	\item Büro mit Tisch, Stuhl, Stromanschlüsse
+	
+	\item Arbeitsmaschine 1 mit Windows7
+	\item dotNET-Framework + Visual Studio für Arbeitsmaschine 1
+	\item Projektspezifische \acs{SDK}s für Visual Studio
+	
+	\item Arbeitsmaschine 2 mit Entwicklungsnetz-Zugang + Kartenleser
+	\item microTool inStep - (Projektverwaltungstool) für Arbeitsmaschine 2
+	
+	\item Projektbetreuer zur Unterstützung
+\end{itemize}
+
+\subsection{Entwicklungsprozess}
+\label{sec:Entwicklungsprozess}
+
+Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Modell nach W. Royce}.
+
+\begin{enumerate}
+	\itemd{Systemanforderungen:}{ Alle Anforderungen, die selbst nicht direkt das Software-Produkt betreffen, werden zunächst festgelegt. Dazu zählen:}
+		\begin{itemize}
+			\item Preis
+			\item Verfügbarkeit
+			\item Sicherheitsaspekte
+			\item Dokumentation
+		\end{itemize}
+	
+	\itemd{Softwareanforderungen:}{Alle Anforderung an die Software selber werden definiert. Jegliche Funktionen, Interaktionen und Besonderheiten werden konkretisiert, so dass sich aus den Systemanforderungen und Softwareanforderungen das Lastenheft ergibt.}
+	
+	\itemd{Analyse:}{Anforderungen aus Lastenheft und Ist-Zustand der Situation werden auf die wichtigsten Bestandteile analysiert, so dass diese in ein Pflichtenheft umformuliert werden können. Die Wirtschaftlichkeit des Projektes wird ebenfalls hier überprüft.}
+
+	\itemd{Entwurf:}{Es wird das Datenmodell, die Architektur und die Schnittstellen zu anderen Anwendungen herausgearbeitet. Zwischenergebnisse:}
+		\begin{itemize}
+			\item \ac{ERM}
+			\item \acs{UML}-Diagramme (Klassendiagramm, Sequenzdiagramm, Anwendungsfalldiagramm \usw)
+			\item Mockups zur \acs{GUI}
+			\item Schnittstellen-Verzeichnis
+		\end{itemize}
+	
+	\itemd{Implementierung:}{Umsetzung der Funktionalitäten nach Pflichtenheft und Entwurf in eine lauffähige Anwendung.}
+	
+	\itemd{Test/Qualitätssicherung:}{Es wird nach der Implementierungsphase die Software auf Fehler, Schwachstellen und Unstimmigkeiten überprüft. weitverbreitete Testvorgänge:}
+		\begin{itemize}
+			\item Komponententests (Unit-Test)
+			\item Modultests
+			\item Systemtests
+			\item Integrationstests
+		\end{itemize}
+	
+	\itemd{Inbetriebnahme:}{letzter Schritt in der Softwareentwicklung. Bei fehlerloser Überprüfung kann die Anwendung abgenommen werden und in Produktion gehen.}
+\end{enumerate} 
+
+Alle Schritte im Wasserfall-Modell sind sequentiell zu bearbeiten, \dahe Kein Schritt darf vorgezogen werden oder übersprungen werden. Es dürfen nur Phasen zurückgesprungen werden, Wenn eine Phase nicht abgeschlossenen werden kann.
+
+%ProjektPhasen
+%\begin{itemize}
+%	\item In welchem Zeitraum und unter welchen Rahmenbedingungen (\zB Tagesarbeitszeit) findet das Projekt statt?
+%	\item Verfeinerung der Zeitplanung, die bereits im Projektantrag vorgestellt wurde.
+%\end{itemize}
+
+%ProjektAbweichungen
+%\begin{itemize}
+%	\item Sollte es Abweichungen zum Projektantrag geben (\zB Zeitplanung, Inhalt des Projekts, neue Anforderungen), müssen diese explizit aufgeführt und begründet werden.
+%\end{itemize}
+
+%RessourcenPlanung
+%\begin{itemize}
+%	\item Detaillierte Planung der benötigten Ressourcen (Hard-/Software, Räumlichkeiten \usw).
+%	\item \Ggfs sind auch personelle Ressourcen einzuplanen (\zB unterstützende Mitarbeiter).
+%	\item Hinweis: Häufig werden hier Ressourcen vergessen, die als selbstverständlich angesehen werden (\zB PC, Büro). 
+%\end{itemize}
+
+%Entwicklungsprozess
+%\begin{itemize}
+%	\item Welcher Entwicklungsprozess wird bei der Bearbeitung des Projekts verfolgt (\zB Wasserfall, agiler Prozess)?
+%\end{itemize}
