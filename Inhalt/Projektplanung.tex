@@ -28,16 +28,38 @@ Implementierungsphase ist daher um gleiche Zeitspanne verringert.  % AAbweichung
 
 Benötigte Ressourcen: % AAuflisten?
 \begin{itemize}
-	\item Büro mit Tisch, Stuhl, Stromanschlüsse
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{\textbullet}
+\renewcommand{\labelitemiii}{\normalfont\bfseries\textendash}
+	\itemd{Hardware}{
+		\begin{itemize}
+			\item Büroarbeitsplatz mit Tisch, Stuhl, Stromanschlüsse
+			\item Arbeitsmaschine 1 mit Windows7
+			\item Arbeitsmaschine 2 mit Entwicklungsnetz-Zugang + Kartenleser
+		\end{itemize}
+	}
 	
-	\item Arbeitsmaschine 1 mit Windows7
-	\item dotNET-Framework + Visual Studio für Arbeitsmaschine 1
-	\item Projektspezifische \acs{SDK}s für Visual Studio
 	
-	\item Arbeitsmaschine 2 mit Entwicklungsnetz-Zugang + Kartenleser
-	\item microTool inStep - (Projektverwaltungstool) für Arbeitsmaschine 2
-	
-	\item Projektbetreuer zur Unterstützung
+	\itemd{Software}{
+		\begin{itemize}
+			\item Visual Studio Professional 2013 + dotNET-Framework (mindestens v4.5)
+			\item \ac{SDK}s für Visual Studio
+			\begin{itemize}
+				\itemd{CrytalReports for VisualStudio}{Framework zum Erzeugung von PDFs aus Dokumenten}
+				\itemd{GhostScript}{Framework zum Drucken von Dokumenten}
+				\itemd{TX-Spell-dotNet-0300}{Framework zur Rechtschreibprüfung von Dokumenten}		\itemd{TX-Text-Control-dotNet-1900}{Framework zur Darstellung von Dokumenten}
+			\end{itemize}
+			\item MiKTeX - Distribution des Textsatzsystems TEX
+			\item TeXStudio - Entwicklungsumgebung für \LaTeX
+			\item Balsamiq - Programm zur Erstellung von Mockups
+			\item microTool inStep - Projektverwaltungstool für Arbeitsmaschine 2
+		\end{itemize}
+	}
+	\itemd{Personal}{
+		\begin{itemize}
+			\item Projektbetreuer zur Unterstützung
+		\end{itemize}
+	}
 \end{itemize}
 
 \subsection{Entwicklungsprozess}
@@ -58,17 +80,17 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 	
 	\itemd{Analyse:}{Anforderungen aus Lastenheft und Ist-Zustand der Situation werden analysiert, so dass diese in ein Pflichtenheft umformuliert werden können. Die Wirtschaftlichkeit eines Projektes wird ebenfalls hier geprüft.}
 
-	\itemd{Entwurf:}{Es wird das Datenmodell, die Architektur und die Schnittstellen zu anderen Anwendungen herausgearbeitet. Zwischenergebnisse:}
+	\itemd{Entwurf:}{Es wird das Datenmodell, die Architektur und die Schnittstellen zu anderen Anwendungen herausgearbeitet. Zwischenergebnisse können sein:}
 		\begin{itemize}
 			\item \ac{ERM}
 			\item \acs{UML}-Diagramme (Klassendiagramm, Sequenzdiagramm, Anwendungsfalldiagramm \usw)
-			\item Mockups zur \acs{GUI}
+			\item Mockups zur \ac{GUI}
 			\item Schnittstellen-Verzeichnis
 		\end{itemize}
 	
 	\itemd{Implementierung:}{Umsetzung der Funktionalitäten nach Pflichtenheft und Entwurf in eine lauffähige Anwendung.}
 	
-	\itemd{Test/Qualitätssicherung:}{Es wird nach der Implementierungsphase die Software auf Fehler, Schwachstellen und Unstimmigkeiten überprüft. weitverbreitete Testvorgänge:}
+	\itemd{Test/Qualitätssicherung:}{Es wird nach der Implementierungsphase die Software auf Fehler, Schwachstellen und Unstimmigkeiten überprüft. weitverbreitete Testmethoden:}
 		\begin{itemize}
 			\item Komponententests (Unit-Test)
 			\item Modultests

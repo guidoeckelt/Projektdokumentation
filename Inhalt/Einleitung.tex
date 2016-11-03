@@ -6,7 +6,7 @@
 \subsection{Projektumfeld} 
 \label{sec:Projektumfeld}
 
-Die \DRV ist ein bundesweit tätiger Träger der gesetzlichen Rentenversicherung in der Bundesrepublik Deutschland
+Die \ac{DRV} ist ein bundesweit tätiger Träger der gesetzlichen Rentenversicherung in der Bundesrepublik Deutschland
 mit \ca 17000 Mitarbeitern.\\
 Zum Aufgabenfeld zählen:
 \begin{itemize}
@@ -17,17 +17,17 @@ Zum Aufgabenfeld zählen:
 
 Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendung, um diesen Prozess elektronisch zu vereinfachen.
 
-\CBPNB ist eine Desktopanwendung, mit der Differenzen bei den Sozialabgaben von Betrieben berechnet werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
-\CBPAD ist eine Desktopanwendung. mit der jeweilige benötigte Dokumente, Anlagen und Schreiben für Betriebsprüfung erzeugt werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
+\ac{CBP-AD} ist eine Desktopanwendung. mit der jeweilige benötigte Dokumente, Anlagen und Schreiben für Betriebsprüfung erzeugt werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
+\ac{CBP-NB} ist eine Desktopanwendung, mit der Differenzen bei den Sozialabgaben von Betrieben berechnet werden können. Sie ist in VB.NET mit einer WindowsForms-UserInterface implementiert.
 % WWindowsForms-UserInterface erklären?
 % CBPAD und CBPNB so lassen?
 
 \subsection{Projektziel} 
 \label{sec:Projektziel}
 
-Die Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die mit Daten von Berechnungen aus der Anwendung \CBPNB befüllt werden. Wenn in dieser Daten verändert werden, die schon in erzeugten Dokumenten vorkommen, sind diese Dokumente in einem „asynchronen“ Zustand und müssen vor Weiterverwendung aktualisiert werden.
+Die Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die mit Daten aus Berechnungen der Anwendung \acs{CBP-NB} befüllt werden. Wenn in dieser Daten verändert werden, die schon in erzeugten Dokumenten vorkommen, sind diese Dokumente in einem „asynchronen“ Zustand und müssen vor Weiterverwendung aktualisiert werden.
 
-Im Hauptmenü der \CBPAD soll ein neuer Menüeintrag bereitgestellt werden, dessen Kommando einen Aktualisierungsprozess anstößt, der alle Dokumente auf Asynchronität prüft und anschließend veraltete aktualisiert.
+Im Hauptmenü der \acs{CBP-AD} soll ein neuer Menüeintrag bereitgestellt werden, dessen Kommando einen Aktualisierungsprozess anstößt, der alle Dokumente auf Asynchronität prüft und anschließend veraltete aktualisiert.
 
 Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Strukturen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine Struktur umgebaut werden.
 
@@ -43,15 +43,15 @@ Durch diese Erweiterung wird eine Vereinheitlichung der Dokumentenaktualisierung
 \subsection{Projektschnittstellen} 
 \label{sec:Projektschnittstellen}
 
-Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über eine \acs{HTTP}-\acs{API} der \CBPNB angefordert.
+Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über eine \acs{HTTP}-\acs{API} der \acs{CBP-NB} angefordert.
 
-Die Benutzer der Anwendung sind die Betriebsprüfer der \DRV.
+Die Benutzer der Anwendung sind die Betriebsprüfer der \acs{DRV}.
 
 
 \subsection{Projektabgrenzung} 
 \label{sec:Projektabgrenzung}
 
-Dieses Projekt zur Erweiterung der \CBPAD ist unabhängig von der Entwicklung der \CBPNB, da nur bereits festgelegte Schnittstellen zum Datenaustausch benutzt werden und keine Änderung dieser notwendig sind.
+Dieses Projekt zur Erweiterung der \acs{CBP-AD} ist unabhängig von der Entwicklung der \ac{CBP-NB}, da nur bereits festgelegte Schnittstellen zum Datenaustausch benutzt werden und keine Änderung dieser notwendig sind.
 
 
 %ProjektUmfeld
