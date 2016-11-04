@@ -5,22 +5,8 @@
 \subsection{Zielplattform}
 \label{sec:Zielplattform}
 
-\begin{itemize}
-	\item Beschreibung der Kriterien zur Auswahl der Zielplattform (\ua Programmiersprache, Datenbank, Client/Server, Hardware).
-\end{itemize}
+Die Desktopanwendung \ac{CBP-AD} ist in VB.NET mit einer WindowsForms-Oberfläche implementiert
 
-
-\subsection{Architekturdesign}
-\label{sec:Architekturdesign}
-\begin{itemize}
-	\item Beschreibung und Begründung der gewählten Anwendungsarchitektur (\zB \acs{MVC}).
-	\item \Ggfs Bewertung und Auswahl von verwendeten Frameworks sowie \ggfs eine kurze Einführung in die Funktionsweise des verwendeten Frameworks.
-\end{itemize}
-
-\paragraph{Beispiel}
-Anhand der Entscheidungsmatrix in Tabelle~\ref{tab:Entscheidungsmatrix} wurde für die Implementierung der Anwendung das \acs{PHP}-Framework Symfony\footnote{\Vgl \citet{Symfony}.} ausgewählt. 
-
-\tabelle{Entscheidungsmatrix}{tab:Entscheidungsmatrix}{Nutzwert.tex}
 
 
 \subsection{Entwurf der Benutzeroberfläche}
@@ -38,19 +24,7 @@ Beispielentwürfe finden sich im \Anhang{app:Entwuerfe}.
 \subsection{Datenmodell}
 \label{sec:Datenmodell}
 
-\begin{itemize}
-	\item Entwurf/Beschreibung der Datenstrukturen (\zB \acs{ERM} und/oder Tabellenmodell, \acs{XML}-Schemas) mit kurzer Beschreibung der wichtigsten (!) verwendeten Entitäten.
-\end{itemize}
-
-\paragraph{Beispiel}
-In \Abbildung{ER} wird ein \ac{ERM} dargestellt, welches lediglich Entitäten, Relationen und die dazugehörigen Kardinalitäten enthält. 
-
-\begin{figure}[htb]
-\centering
-\includegraphicsKeepAspectRatio{ERDiagramm.pdf}{0.6}
-\caption{Vereinfachtes ER-Modell}
-\label{fig:ER}
-\end{figure} 
+Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, daher ist kein Datenmodell erforderlich.
 
 
 \subsection{Geschäftslogik}
@@ -87,8 +61,25 @@ Ein Klassendiagramm, welches die Klassen der Anwendung und deren Beziehungen unt
 	\item Auszüge aus dem Pflichtenheft/Datenverarbeitungskonzept, wenn es im Rahmen des Projekts erstellt wurde.
 \end{itemize}
 
-\paragraph{Beispiel}
-Ein Beispiel für das auf dem Lastenheft (siehe Kapitel~\ref{sec:Lastenheft}: \nameref{sec:Lastenheft}) aufbauende Pflichtenheft ist im \Anhang{app:Pflichtenheft} zu finden.
 
 
 \Zwischenstand{Entwurfsphase}{Entwurf}
+
+%ZielPlatform
+%\begin{itemize}
+%	\item Beschreibung der Kriterien zur Auswahl der Zielplattform (\ua Programmiersprache, Datenbank, Client/Server, Hardware).
+%\end{itemize}
+
+%\subsection{Architekturdesign}
+%\label{sec:Architekturdesign}
+%\begin{itemize}
+%	\item Beschreibung und Begründung der gewählten Anwendungsarchitektur (\zB \acs{MVC}).
+%	\item \Ggfs Bewertung und Auswahl von verwendeten Frameworks sowie \ggfs eine kurze Einführung in die Funktionsweise des verwendeten Frameworks.
+%\end{itemize}
+
+%Entwurf der GUI
+
+%Datenmodell
+%\begin{itemize}
+%	\item Entwurf/Beschreibung der Datenstrukturen (\zB \acs{ERM} und/oder Tabellenmodell, \acs{XML}-Schemas) mit kurzer Beschreibung der wichtigsten (!) verwendeten Entitäten.
+%\end{itemize}
