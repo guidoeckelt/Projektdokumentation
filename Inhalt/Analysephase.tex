@@ -22,9 +22,8 @@ Da die Entwicklung der \acs{CBP-AD} ein internes Projekt der \acs{DRV} ist und n
 \subsubsection{Projektkosten}
 \label{sec:Projektkosten}
 
-\paragraph{Beispielrechnung (verkürzt)}
 Die Kosten für die Durchführung des Projekts setzen sich sowohl aus Personal-, als auch aus Ressourcenkosten zusammen.
-Laut Tarifvertrag\footnote{http://www.oeffentlichen-dienst.de/auszubildende/25-tarifvertrag-fuer-den-auszubildende/90-tvaoed-besonderer-teil-bbig.html} verdient ein Auszubildender im dritten Lehrjahr pro Monat \eur{949,02} Brutto. 
+Laut Tarifvertrag\footnote{\href{http://www.oeffentlichen-dienst.de/auszubildende/25-tarifvertrag-fuer-den-auszubildende/90-tvaoed-besonderer-teil-bbig.html}{Link zum Tarifvertrag}} verdient ein Auszubildender im dritten Lehrjahr pro Monat \eur{949,02} Brutto. 
 
 \begin{eqnarray}
 8 \mbox{ h/Tag} \cdot 220 \mbox{ Tage/Jahr} = 1760 \mbox{ h/Jahr}\\
@@ -35,70 +34,36 @@ Laut Tarifvertrag\footnote{http://www.oeffentlichen-dienst.de/auszubildende/25-t
 Es ergibt sich also ein Stundenlohn von \eur{6,96}. 
 Die Durchführungszeit des Projekts beträgt 70 Stunden. Für die Nutzung von Ressourcen\footnote{Räumlichkeiten, Arbeitsplatzrechner etc.} wird 
 ein pauschaler Stundensatz von \eur{15} angenommen. Für die anderen Mitarbeiter wird pauschal ein Stundenlohn von \eur{25} angenommen. 
-Eine Aufstellung der Kosten befindet sich in Tabelle~\ref{tab:Kostenaufstellung} und sie betragen insgesamt \eur{2739,20}.
+Eine Aufstellung der Kosten befindet sich in Tabelle~\ref{tab:Kostenaufstellung} und sie betragen insgesamt \eur{1697,20}.
 \tabelle{Kostenaufstellung}{tab:Kostenaufstellung}{Kostenaufstellung.tex}
 
 
 \subsubsection{Amortisationsdauer}
 \label{sec:Amortisationsdauer}
-\begin{itemize}
-	\item Welche monetären Vorteile bietet das Projekt (\zB Einsparung von Lizenzkosten, Arbeitszeitersparnis, bessere Usability, Korrektheit)?
-	\item Wann hat sich das Projekt amortisiert?
-\end{itemize}
 
-\paragraph{Beispielrechnung (verkürzt)}
-Bei einer Zeiteinsparung von 10 Minuten am Tag für jeden der 25 Anwender und 220 Arbeitstagen im Jahr ergibt sich eine gesamte Zeiteinsparung von 
+Bei einer Zeiteinsparung von 10 Minuten am Tag für jeden der 4000 Betriebsprüfer und 220 Arbeitstagen im Jahr ergibt sich eine gesamte Zeiteinsparung von 
 \begin{eqnarray}
-25 \cdot 220 \mbox{ Tage/Jahr} \cdot 10 \mbox{ min/Tag} = 55000 \mbox{ min/Jahr} \approx 917 \mbox{ h/Jahr} 
+4000 \cdot 220 \mbox{ Tage/Jahr} \cdot 10 \mbox{ min/Tag} = 8800000 \mbox{ min/Jahr} \approx 146667 \mbox{ h/Jahr} 
 \end{eqnarray}
 
 Dadurch ergibt sich eine jährliche Einsparung von 
 \begin{eqnarray}
-917 \mbox{h} \cdot \eur{(25 + 15)}{\mbox{/h}} = \eur{36680}
+146667 \mbox{h} \cdot \eur{(25 + 15)}{\mbox{/h}} = \eur{5866680}
 \end{eqnarray}
 
-Die Amortisationszeit beträgt also $\frac{\eur{2739,20}}{\eur{36680}\mbox{/Jahr}} \approx 0,07 \mbox{ Jahre} \approx 4 \mbox{ Wochen}$.
+Die Amortisationszeit beträgt also $\frac{\eur{1697,20}}{\eur{5866680}\mbox{/Jahr}} \approx 0,0002 \mbox{ Jahre} \approx 2 \mbox{ Stunden}$.
 
 
-\subsection{Nutzwertanalyse}
-\label{sec:Nutzwertanalyse}
-\begin{itemize}
-	\item Darstellung des nicht-monetären Nutzens (\zB Vorher-/Nachher-Vergleich anhand eines Wirtschaftlichkeitskoeffizienten). 
-\end{itemize}
-
-\paragraph{Beispiel}
-Ein Beispiel für eine Entscheidungsmatrix findet sich in Kapitel~\ref{sec:Architekturdesign}: \nameref{sec:Architekturdesign}.
-
-
-\subsection{Anwendungsfälle}
-\label{sec:Anwendungsfaelle}
-\begin{itemize}
-	\item Welche Anwendungsfälle soll das Projekt abdecken?
-	\item Einer oder mehrere interessante (!) Anwendungsfälle könnten exemplarisch durch ein Aktivitätsdiagramm oder eine \ac{EPK} detailliert beschrieben werden. 
-\end{itemize}
-
-\paragraph{Beispiel}
-Ein Beispiel für ein Use Case-Diagramm findet sich im \Anhang{app:UseCase}.
-
-
-\subsection{Qualitätsanforderungen}
-\label{sec:Qualitaetsanforderungen}
-\begin{itemize}
-	\item Welche Qualitätsanforderungen werden an die Anwendung gestellt (\zB hinsichtlich Performance, Usability, Effizienz \etc (siehe \citet{ISO9126}))?
-\end{itemize}
+%UseCases - entfällt wegen nur einem
 
 
 \subsection{Lastenheft/Fachkonzept}
 \label{sec:Lastenheft}
-\begin{itemize}
-	\item Auszüge aus dem Lastenheft/Fachkonzept, wenn es im Rahmen des Projekts erstellt wurde.
-	\item Mögliche Inhalte: Funktionen des Programms (Muss/Soll/Wunsch), User Stories, Benutzerrollen
-\end{itemize}
 
 \paragraph{Beispiel}
 Ein Beispiel für ein Lastenheft findet sich im \Anhang{app:Lastenheft}. 
 
-\Zwischenstand{Analysephase}{Analyse}
+%\Zwischenstand{Analysephase}{Analyse}
 
 %Analyse
 %\begin{itemize}
@@ -117,7 +82,37 @@ Ein Beispiel für ein Lastenheft findet sich im \Anhang{app:Lastenheft}.
 %	\item Wenn ja, wieso wird das Projekt trotzdem umgesetzt?
 %\end{itemize}
 
-%ProjektKosten
+%%ProjektKosten
 %\begin{itemize}
 %	\item Welche Kosten fallen bei der Umsetzung des Projekts im Detail an (\zB Entwicklung, Einführung/Schulung, Wartung)?
 %\end{itemize}
+
+%%Amortisationsdauer
+%\begin{itemize}
+%	\item Welche monetären Vorteile bietet das Projekt (\zB Einsparung von Lizenzkosten, Arbeitszeitersparnis, bessere Usability, Korrektheit)?
+%	\item Wann hat sich das Projekt amortisiert?
+%\end{itemize}
+
+%Nutzwertanalyse
+%\begin{itemize}
+%	\item Darstellung des nicht-monetären Nutzens (\zB Vorher-/Nachher-Vergleich anhand eines Wirtschaftlichkeitskoeffizienten). 
+%\end{itemize}
+
+%Anwendungsfälle
+%\begin{itemize}
+%	\item Welche Anwendungsfälle soll das Projekt abdecken?
+%	\item Einer oder mehrere interessante (!) Anwendungsfälle könnten exemplarisch durch ein Aktivitätsdiagramm oder eine \ac{EPK} detailliert beschrieben werden. 
+%\end{itemize}
+
+%Qualitätsanforderungen
+%\begin{itemize}
+%	\item Welche Qualitätsanforderungen werden an die Anwendung gestellt (\zB hinsichtlich Performance, Usability, Effizienz \etc (siehe \citet{ISO9126}))?
+%\end{itemize}
+
+%Lastenheft/Fachkonzept
+%\begin{itemize}
+%	\item Auszüge aus dem Lastenheft/Fachkonzept, wenn es im Rahmen des Projekts erstellt wurde.
+%	\item Mögliche Inhalte: Funktionen des Programms (Muss/Soll/Wunsch), User Stories, Benutzerrollen
+%\end{itemize}
+
+%Zwischenstand
