@@ -2,13 +2,19 @@
 \section{Abnahmephase} 
 \label{sec:Abnahmephase}
 
-\begin{itemize}
-	\item Welche Tests (\zB Unit-, Integrations-, Systemtests) wurden durchgeführt und welche Ergebnisse haben sie geliefert (\zB Logs von Unit Tests, Testprotokolle der Anwender)?
-	\item Wurde die Anwendung offiziell abgenommen?
-\end{itemize}
+\subsection{Komponententest}
 
-\paragraph{Beispiel}
-Ein Auszug eines Unit Tests befindet sich im \Anhang{app:Test}. Dort ist auch der Aufruf des Tests auf der Konsole des Webservers zu sehen.
+Für die in \ref{sec:Qualitaetssicherung} beschriebenen Komponententests befinden sich Screenshots von Auszügen im \Anhang{app:Test}.
 
+\subsection{Abnahmetests}
+
+Bei erfolgreichen Komponententests prüft ein Facharbeiter mittels Code-Review gegen, ob sich auffällige Stelle, Flüchtigkeitsfehler oder ähnliches vorliegen. Bei vorläufiger Abnahme eines Facharbeiters ist die Erweiterung soweit zum nächsten Verbundtest\footnote{System- und Benutzeroberflächentests aller Programme der Fachabteilungen} in die Anwendung integriert zu werden, sodass bestätigt werden kann, ob sich alle Funktionen der Anwendung weiterhin fehlerfrei ausführen lassen und sich an die Richtlinien zur Barrierefreiheit und Usability gehalten wird.
 
 \Zwischenstand{Abnahmephase}{Abnahme}
+
+%Abnahmephase
+
+%\begin{itemize}
+%	\item Welche Tests (\zB Unit-, Integrations-, Systemtests) wurden durchgeführt und welche Ergebnisse haben sie geliefert (\zB Logs von Unit Tests, Testprotokolle der Anwender)?
+%	\item Wurde die Anwendung offiziell abgenommen?
+%\end{itemize}
