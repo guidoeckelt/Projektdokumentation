@@ -9,8 +9,8 @@
 \label{sec:Projektphasen}
 
 Die Projektphase begann am 13.03.2017 und endete am 02.06.2016.
-Die tägliche Arbeitszeit betrug 7 Stunden 48 Minuten mit 30 Minuten Mittagspause.
-Die Projektarbeit fand nicht durchgängig statt, da Betriebsinterne Aufgaben und Ereignisse berücksichtigt werden müssen.
+Die tägliche Arbeitszeit betrug 7 Stunden 48 Minuten und zuzüglich 30 Minuten Mittagspause.
+Die Projektarbeit fand nicht durchgängig statt, da betriebsinterne Aufgaben und Ereignisse berücksichtigt werden mussten.
 
 \tabelle{Zeitplanung}{tab:Zeitplanung}{Zeitplanung}
 
@@ -34,15 +34,10 @@ Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
 			\item Arbeitsmaschine 1 mit Windows7
 			\item Arbeitsmaschine 2 mit Kartenleser und Zugang zum Entwicklungsnetz der \DRV
 		\end{itemize}
+\clearpage
 	\itemd{Software}{}
 		\begin{itemize}
 			\item Visual Studio Professional 2013 + .NET-Framework (mindestens v2.0)
-			\item \ac{SDK}s für Visual Studio
-			\begin{itemize}
-				\itemd{CrytalReports for VisualStudio}{Framework zum Erzeugung von PDFs aus Dokumenten}
-				\itemd{GhostScript}{Framework zum Drucken von Dokumenten}
-				\itemd{TX-Spell-dotNet-0300}{Framework zur Rechtschreibprüfung von Dokumenten}		\itemd{TX-Text-Control-dotNet-1900}{Framework zur Darstellung von Dokumenten}
-			\end{itemize}
 			\item MiKTeX - Distribution des Textsatzsystems TEX
 			\item TeXStudio - Entwicklungsumgebung für \LaTeX
 			\item microTool inStep - Projektverwaltungstool für Arbeitsmaschine 2
@@ -56,10 +51,10 @@ Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
 \subsection{Entwicklungsprozess}
 \label{sec:Entwicklungsprozess}
 
-Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Modell nach \cite{wasserfallRoyce}}. Es ist konventionell vorgesehen, dass alle Schritte im Wasserfall-Modell sequentiell zu bearbeiten sind, \dahe Kein Schritt darf übersprungen werden und Ein Neustart oder Abbruch des Projektes bei nicht erfolgreichen Abschluss eines Schrittes. In der IT-Branche wird jedoch meist statt einem Projektneustart eher jeweilige Schritte zurückgegangen, da ein Neustart wirtschaftlich gesehen ein vieler größer Aufwand wäre.
+Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Modell nach \cite{wasserfallRoyce}}. Es ist konventionell vorgesehen, dass alle Schritte im Wasserfall-Modell sequentiell zu bearbeiten sind, \dahe Schritte dürfen übersprungen werden. Nicht erfolgreicher Abschluss eines Schrittes bedeutet ein Neustart oder Abbruch des Projektes. In der IT-Branche wird jedoch meist mit dem erweiterten Wasserfall-Modell gearbeitet, welches Rücksprünge zum jeweils vorhergehenden Schritt erlaubt.
 
 \begin{enumerate}
-	\itemd{Systemanforderungen:}{ Alle Anforderungen, die selbst nicht direkt das Software-Produkt betreffen, werden zunächst festgelegt. Dazu zählen:}
+	\itemd{Systemanforderungen:\\}{ Alle Anforderungen, die selbst nicht direkt das Software-Produkt betreffen, werden zunächst festgelegt. Dazu zählen:}
 		\begin{itemize}
 			\item Preis
 			\item Verfügbarkeit
@@ -67,11 +62,11 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 			\item Dokumentation
 		\end{itemize}
 	
-	\itemd{Softwareanforderungen:}{Alle Anforderung an die Software selber werden definiert. Jegliche Funktionen, Interaktionen und Besonderheiten werden konkretisiert, so dass sich aus den Systemanforderungen und Softwareanforderungen das Lastenheft ergibt.}
+	\itemd{Softwareanforderungen:\\}{Alle Anforderung an die Software selber werden definiert. Jegliche Funktionen, Interaktionen und Besonderheiten werden konkretisiert, so dass sich aus den Systemanforderungen und Softwareanforderungen das Lastenheft ergibt.}
 	
-	\itemd{Analyse:}{Anforderungen aus Lastenheft und Ist-Zustand der Situation werden analysiert, so dass diese in ein Pflichtenheft umformuliert werden können. Die Wirtschaftlichkeit eines Projektes wird ebenfalls hier geprüft.}
+	\itemd{Analyse:\\}{Anforderungen aus Lastenheft und Ist-Zustand der Situation werden analysiert, so dass diese in ein Pflichtenheft umformuliert werden können. Die Wirtschaftlichkeit eines Projektes wird ebenfalls hier geprüft.}
 
-	\itemd{Entwurf:}{Es wird das Datenmodell, die Architektur und die Schnittstellen zu anderen Anwendungen herausgearbeitet. Zwischenergebnisse können sein:}
+	\itemd{Entwurf:\\}{Es wird das Datenmodell, die Architektur und die Schnittstellen zu anderen Anwendungen herausgearbeitet. Zwischenergebnisse können sein:}
 		\begin{itemize}
 			\item \ac{ERM}
 			\item \acs{UML}-Diagramme (Klassendiagramm, Sequenzdiagramm, Anwendungsfalldiagramm \usw)
@@ -79,9 +74,9 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 			\item Schnittstellen-Verzeichnis
 		\end{itemize}
 	
-	\itemd{Implementierung:}{Umsetzung der Funktionalitäten nach Pflichtenheft und Entwurf in eine lauffähige Anwendung.}
+	\itemd{Implementierung:\\}{Umsetzung der Funktionalitäten nach Pflichtenheft und Entwurf in eine lauffähige Anwendung.}
 	
-	\itemd{Test/Qualitätssicherung:}{Es wird nach der Implementierungsphase die Software auf Fehler, Schwachstellen und Unstimmigkeiten überprüft. weitverbreitete Testmethoden:}
+	\itemd{Test/Qualitätssicherung:\\}{Es wird nach der Implementierungsphase die Software auf Fehler, Schwachstellen und Unstimmigkeiten überprüft. Folgende Testmethoden sind Beispiele Qualitätssicherung in der IT-Branche:}
 		\begin{itemize}
 			\item Komponententests (Unit-Test)
 			\item Modultests
@@ -89,7 +84,7 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 			\item Integrationstests
 		\end{itemize}
 	
-	\itemd{Inbetriebnahme:}{letzter Schritt in der Softwareentwicklung. Bei fehlerloser Überprüfung kann die Anwendung abgenommen werden und in Produktion gehen.}
+	\itemd{Inbetriebnahme:\\}{Nach erfolgreichen Bestehen der Qualitätssicherung kann die Anwendung abgenommen werden und in Produktion gehen.}
 \end{enumerate} 
 
 

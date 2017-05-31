@@ -9,17 +9,19 @@
 
 Die \ac{DRV Bund} ist ein bundesweit tätiger Träger der gesetzlichen Rentenversicherung in der Bundesrepublik Deutschland
 mit \ca 17000 Mitarbeitern.\\
-Zum Aufgabenfeld zählen:
+Zum Aufgabenfeld gehören:
 \begin{itemize}
-	\item Bearbeitung von Rentenanträgen
+	\item Bearbeitung von Rentenanträgen und Auszahlung von Renten
 	\item Überprüfung von Sozialabgaben auf Richtigkeit
 	\item Beratung zu gesetzlichen Pflichten und Rechten
+	\item Bearbeitung von Rehabilitationsanträgen und Beaufsichtigung der Rehabilitationseinrichtungen
 \end{itemize}
 
-Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendung, um diesen Prozess elektronisch zu vereinfachen.
+Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendung, um diesen Prozess zu vereinfachen.
 
-Die \ac{CBP-AD} ist eine Desktopanwendung mit der jeweilige benötigte Dokumente, Anlagen und Schreiben für Betriebsprüfungen erzeugt werden können. Sie ist in \ac{VB}.NET mit einer Windows-Forms-Oberfläche implementiert. Die entsprechenden Daten zum Einbinden in die Dokumente werden über die Desktopanwendung \ac{CBP-NB}, durch die Berechnungen zu den Sozialabgaben von Betrieben berechnet werden können, angefordert.
-% CBPAD und CBPNB so lassen?
+Die Betriebsprüfung
+
+Die \ac{CBP-AD} ist eine Desktopanwendung mit der jeweilig benötigte Dokumente, Anlagen und Schreiben(nachfolgend nur noch Dokumente genannt) für Betriebsprüfungen erzeugt werden können. Diese Dokumente basieren auf Datenquellen der Desktopanwendung \ac{CBP-NB}.
 
 
 \subsection{Projektziel} 
@@ -31,7 +33,7 @@ Im Hauptmenü der \acs{CBP-AD} soll ein neuer Menüeintrag bereitgestellt werden
 
 Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Strukturen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine Struktur umgebaut werden.
 
-Erzeugungsstrukturen für einige Dokumenttypen berechnen ihren Fortschritt eigenständig und geben diesen in eigenen Fenstern aus. Für diese soll eine Möglichkeit der Unterdrückung dieser Fortschrittsausgabe implementiert werden, damit der Aktualisierungsprozess „Globales Aktualisieren“ dies einheitlich für alle Dokumenttypen ausgeben kann.
+Erzeugungsstrukturen für einige Dokumenttypen berechnen ihren Fortschritt eigenständig und geben diesen in einer eigenen Oberfläche aus. Für diese soll eine Möglichkeit der Unterdrückung dieser Fortschrittsausgabe implementiert werden, damit der Aktualisierungsprozess „Globales Aktualisieren“ dies einheitlich für alle Dokumenttypen ausgeben kann.
 
 
 \subsection{Projektbegründung} 
