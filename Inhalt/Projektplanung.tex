@@ -1,6 +1,6 @@
 % !TEX root = ../Projektdokumentation.tex
 
-
+\clearpage
 \section{Projektplanung} 
 \label{sec:Projektplanung}
 
@@ -8,20 +8,18 @@
 \subsection{Projektphasen}
 \label{sec:Projektphasen}
 
-Die (Vorbereitungs-)Projektphase begann am 17.10.2016 und endete am 16.12.2016.
+Die Projektphase begann am 13.03.2017 und endete am 02.06.2016.
 Die tägliche Arbeitszeit betrug 7 Stunden 48 Minuten mit 30 Minuten Mittagspause.
-Die Projektarbeit fand nicht durchgängig statt, da Betriebsinterne Ereignis berücksichtigt werden müssen.
+Die Projektarbeit fand nicht durchgängig statt, da Betriebsinterne Aufgaben und Ereignisse berücksichtigt werden müssen.
 
 \tabelle{Zeitplanung}{tab:Zeitplanung}{Zeitplanung}
 
 Eine detailliertere Zeitplanung findet sich im \Anhang{app:Zeitplanung}.
 
-\subsection{Abweichungen vom Projektantrag}
-\label{sec:AbweichungenProjektantrag}
-
-Die Entwurfsphase mit geplanten 5 Stunden ist dazu gekommen. 
-Da eine grobe Analyse schon durch die Fachabteilung durchgeführt wurde, sind weniger Stunden hier nötig, so dass es sich ausgleicht.
-% AAbweichungen vervollständigen
+%\subsection{Abweichungen vom Projektantrag}
+%\label{sec:AbweichungenProjektantrag}
+%
+%Die Vereinheitlichung des Fortschrittsberechnung und -ausgabe sind aufgrund der derzeitigen Architektur und  des Designs noch nicht möglich
 
 \subsection{Ressourcenplanung}
 \label{sec:Ressourcenplanung}
@@ -30,14 +28,13 @@ Da eine grobe Analyse schon durch die Fachabteilung durchgeführt wurde, sind we
 \renewcommand{\labelitemi}{}
 \renewcommand{\labelitemii}{\textbullet}
 \renewcommand{\labelitemiii}{\normalfont\bfseries\textendash}
-	\itemd{Hardware}{
+	\itemd{Hardware}{}
 		\begin{itemize}
 			\item Büroarbeitsplatz mit Tisch, Stuhl, Stromanschlüsse
 			\item Arbeitsmaschine 1 mit Windows7
-			\item Arbeitsmaschine 2 mit Entwicklungsnetz-Zugang + Kartenleser
+			\item Arbeitsmaschine 2 mit Kartenleser und Zugang zum Entwicklungsnetz der \DRV
 		\end{itemize}
-	}
-	\itemd{Software}{
+	\itemd{Software}{}
 		\begin{itemize}
 			\item Visual Studio Professional 2013 + .NET-Framework (mindestens v2.0)
 			\item \ac{SDK}s für Visual Studio
@@ -48,21 +45,18 @@ Da eine grobe Analyse schon durch die Fachabteilung durchgeführt wurde, sind we
 			\end{itemize}
 			\item MiKTeX - Distribution des Textsatzsystems TEX
 			\item TeXStudio - Entwicklungsumgebung für \LaTeX
-			\item Balsamiq - Programm zur Erstellung von Mockups
 			\item microTool inStep - Projektverwaltungstool für Arbeitsmaschine 2
 		\end{itemize}
-	}
-	\itemd{Personal}{
+	\itemd{Personal}{}
 		\begin{itemize}
 			\item Projektbetreuer zur Unterstützung
 		\end{itemize}
-	}
 \end{itemize}
 
 \subsection{Entwicklungsprozess}
 \label{sec:Entwicklungsprozess}
 
-Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Modell nach \cite{wasserfallRoyce}}.
+Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Modell nach \cite{wasserfallRoyce}}. Es ist konventionell vorgesehen, dass alle Schritte im Wasserfall-Modell sequentiell zu bearbeiten sind, \dahe Kein Schritt darf übersprungen werden und Ein Neustart oder Abbruch des Projektes bei nicht erfolgreichen Abschluss eines Schrittes. In der IT-Branche wird jedoch meist statt einem Projektneustart eher jeweilige Schritte zurückgegangen, da ein Neustart wirtschaftlich gesehen ein vieler größer Aufwand wäre.
 
 \begin{enumerate}
 	\itemd{Systemanforderungen:}{ Alle Anforderungen, die selbst nicht direkt das Software-Produkt betreffen, werden zunächst festgelegt. Dazu zählen:}
@@ -81,7 +75,7 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 		\begin{itemize}
 			\item \ac{ERM}
 			\item \acs{UML}-Diagramme (Klassendiagramm, Sequenzdiagramm, Anwendungsfalldiagramm \usw)
-			\item Mockups zur \ac{GUI}
+			\item Mockups zur \acs{GUI}
 			\item Schnittstellen-Verzeichnis
 		\end{itemize}
 	
@@ -98,27 +92,4 @@ Die ausgewählte Vorgehensweise ist das Wasserfall-Modell\footnote{Wasserfall-Mo
 	\itemd{Inbetriebnahme:}{letzter Schritt in der Softwareentwicklung. Bei fehlerloser Überprüfung kann die Anwendung abgenommen werden und in Produktion gehen.}
 \end{enumerate} 
 
-Es ist konventionell vorgesehen,dass alle Schritte im Wasserfall-Modell sequentiell zu bearbeiten sind, \dahe Kein Schritt darf vorgezogen, übersprungen werden und bei nicht erfolgreichen Abschluss einer Phase, dass ein Neustart bei Phase stattfinden sollte. In der Praxis wird meist beim letzten Punkt jedoch statt einen Neustart eher Phasen zurückgegangen, da ein Projektneustart wirtschaftlich gesehen ein vieler größer Aufwand wäre.
 
-%ProjektPhasen
-%\begin{itemize}
-%	\item In welchem Zeitraum und unter welchen Rahmenbedingungen (\zB Tagesarbeitszeit) findet das Projekt statt?
-%	\item Verfeinerung der Zeitplanung, die bereits im Projektantrag vorgestellt wurde.
-%\end{itemize}
-
-%ProjektAbweichungen
-%\begin{itemize}
-%	\item Sollte es Abweichungen zum Projektantrag geben (\zB Zeitplanung, Inhalt des Projekts, neue Anforderungen), müssen diese explizit aufgeführt und begründet werden.
-%\end{itemize}
-
-%RessourcenPlanung
-%\begin{itemize}
-%	\item Detaillierte Planung der benötigten Ressourcen (Hard-/Software, Räumlichkeiten \usw).
-%	\item \Ggfs sind auch personelle Ressourcen einzuplanen (\zB unterstützende Mitarbeiter).
-%	\item Hinweis: Häufig werden hier Ressourcen vergessen, die als selbstverständlich angesehen werden (\zB PC, Büro). 
-%\end{itemize}
-
-%Entwicklungsprozess
-%\begin{itemize}
-%	\item Welcher Entwicklungsprozess wird bei der Bearbeitung des Projekts verfolgt (\zB Wasserfall, agiler Prozess)?
-%\end{itemize}

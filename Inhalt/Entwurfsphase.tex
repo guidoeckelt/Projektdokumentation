@@ -6,18 +6,15 @@
 \subsection{Zielplattform}
 \label{sec:Zielplattform}
 
-\ac{CBP-AD} ist als Desktopanwendung in \acs{VB}.NET auf Basis des .NET-Framework Version 2.0 implementiert.
+\ac{CBP-AD} ist als Desktopanwendung in \acs{VB}.NET, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, auf Basis des .NET-Framework Version 2.0 implementiert.
 Sie wird als x86-Anwendung für zurzeit Windows-XP und Windows-7 entwickelt.
 
 
 \subsection{Benutzeroberfläche}
 \label{sec:Benutzeroberflaeche}
 
-%Die \acs{GUI} der \acute{CBP-AD} ist wie in \ref{sec:Einleitung} erwähnt als WindowsForms-Oberfläche realisiert. Das Aussehen der Steuerelemente ist durch \ac{CI} vordefiniert
-Für diese Funktionalität sind keine Änderung an der Benutzeroberfläche \acs{GUI} nötig, da die Oberfläche zur Fortschrittsausgabe schon implementiert durch die Fachabteilung wurde.
-
-%\paragraph{Beispiel}
-%Die Abbildung zum Entwurf des Fortschrittsfensters findet sich im \Anhang{app:Entwuerfe}. 
+Die \acs{GUI} der \ac{CBP-AD} ist, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, als Windows-Forms-Oberfläche realisiert. Das Aussehen der Steuerelemente ist durch \ac{CI} vordefiniert.
+Für diese Funktionalität sind keine Änderung an der \acs{GUI} nötig, da die Oberfläche zur Fortschrittsausgabe schon in bereits bestehenden Klassen implementiert wurde.
 
 
 \subsection{Datenmodell}
@@ -29,7 +26,13 @@ Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, da
 \subsection{Geschäftslogik}
 \label{sec:Geschaeftslogik}
 
-Ein Klassendiagramm, welches die Klassen der Anwendung und deren Beziehungen untereinander darstellt kann im \Anhang{app:Klassendiagramm} eingesehen werden.
+\begin{figure}[htb]
+	\centering
+	\includegraphicsKeepAspectRatio{Klassendiagramm-Ausschnitt.png}{1}
+	\caption{Ausschnitt des Klassendiagramms}
+\end{figure}
+
+das vollständige Klassendiagramm kann im \Anhang{app:Klassendiagramm} eingesehen werden.
 
 
 \subsection{Maßnahmen zur Qualitätssicherung}
@@ -39,51 +42,3 @@ Die Funktionalität "Globales Aktualisieren" wird durch die Komponententests auf
 
 
 \Zwischenstand{Entwurfsphase}{Entwurf}
-
-%ZielPlatform
-%\begin{itemize}
-%	\item Beschreibung der Kriterien zur Auswahl der Zielplattform (\ua Programmiersprache, Datenbank, Client/Server, Hardware).
-%\end{itemize}
-
-%Architekturdesign
-%\begin{itemize}
-%	\item Beschreibung und Begründung der gewählten Anwendungsarchitektur (\zB \acs{MVC}).
-%	\item \Ggfs Bewertung und Auswahl von verwendeten Frameworks sowie \ggfs eine kurze Einführung in die Funktionsweise des verwendeten Frameworks.
-%\end{itemize}
-
-%Entwurf der GUI
-%\begin{itemize}
-%	\item Entscheidung für die gewählte Benutzeroberfläche (\zB GUI, Webinterface).
-%	\item Beschreibung des visuellen Entwurfs der konkreten Oberfläche (\zB Mockups, Menüführung).
-% 	\item \Ggfs Erläuterung von angewendeten Richtlinien zur Usability und Verweis auf Corporate Design.
-% \end{itemize}
-
-%Datenmodell
-%\begin{itemize}
-%	\item Entwurf/Beschreibung der Datenstrukturen (\zB \acs{ERM} und/oder Tabellenmodell, \acs{XML}-Schemas) mit kurzer Beschreibung der wichtigsten (!) verwendeten Entitäten.
-%\end{itemize}
-
-%Geschäftslogik
-%\begin{itemize}
-%	\item Modellierung und Beschreibung der wichtigsten (!) Bereiche der Geschäftslogik (\zB mit Kom\-po\-nen\-ten-, Klassen-, Sequenz-, Datenflussdiagramm, Programmablaufplan, Struktogramm, \ac{EPK}).
-%	\item Wie wird die erstellte Anwendung in den Arbeitsfluss des Unternehmens integriert?
-%\end{itemize}
-
-%\Abbildung{Modulimport} zeigt den grundsätzlichen Programmablauf beim Einlesen eines Moduls als \ac{EPK}.
-%\begin{figure}[htb]
-%	\centering
-%	\includegraphicsKeepAspectRatio{modulimport.pdf}{0.9}
-%	\caption{Prozess des Einlesens eines Moduls}
-%	\label{fig:Modulimport}
-%\end{figure}
-
-%Maßnahmen zur QA
-%\begin{itemize}
-%	\item Welche Maßnahmen werden ergriffen, um die Qualität des Projektergebnisses (siehe Kapitel~\ref{sec:Qualitaetsanforderungen}: \nameref{sec:Qualitaetsanforderungen}) zu sichern (\zB automatische Tests, Anwendertests)?
-%	\item \Ggfs Definition von Testfällen und deren Durchführung (durch Programme/Benutzer).
-%\end{itemize}
-
-%Pflichtenheft/Datenverarbeitungskonzept
-%\begin{itemize}
-%	\item Auszüge aus dem Pflichtenheft/Datenverarbeitungskonzept, wenn es im Rahmen des Projekts erstellt wurde.
-%\end{itemize}

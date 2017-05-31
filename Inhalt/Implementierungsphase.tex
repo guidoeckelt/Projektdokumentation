@@ -1,10 +1,25 @@
 % !TEX root = ../Projektdokumentation.tex
+\clearpage
 \section{Implementierungsphase} 
 \label{sec:Implementierungsphase}
 
 \subsection{Implementierung der Geschäftslogik}
 \label{sec:ImplementierungGeschaeftslogik}
-%
+
+
+Das Sequenzdiagramm zu diesem Prozess kann im \Anhang{app:Sequenzdiagramm} eingesehen werden.
+
+\subsection{Verwendete Entwurfsmuster}
+\label{sec:Entwurfsmuster}
+
+Für die Instanziierung der einzelnen konkreten Objekte der Schnittstelle \gqq{IGlobalesAktualisierenAnlage} verwendete ich das Fabrik-Entwurfsmuster nach folgenden Schema.
+\begin{figure}
+%	\centering
+	\includegraphicsKeepAspectRatio{Klassendiagramm-Fabrik.png}{1}
+	\caption{Klassendiagramm zur Verwendung des Farbik-Entwurfsmusters}
+\end{figure}
+
+
 %\begin{itemize}
 %	\item Beschreibung des Vorgehens bei der Umsetzung/Programmierung der entworfenen Anwendung.
 %	\item \Ggfs interessante Funktionen/Algorithmen im Detail vorstellen, verwendete Entwurfsmuster zeigen.
@@ -18,27 +33,4 @@
 
 \Zwischenstand{Implementierungsphase}{Implementierung}
 
-%Implementierung der Datenstrukturen
-
-%\begin{itemize}
-%	\item Beschreibung der angelegten Datenbank (\zB Generierung von \acs{SQL} aus Modellierungswerkzeug oder händisches Anlegen), \acs{XML}-Schemas \usw.
-%\end{itemize}
-
-
-%Implementierung der Benutzeroberfläche
-
-%\begin{itemize}
-%	\item Beschreibung der Implementierung der Benutzeroberfläche, falls dies separat zur Implementierung der Geschäftslogik erfolgt (\zB bei \acs{HTML}-Oberflächen und Stylesheets).
-%	\item \Ggfs Beschreibung des Corporate Designs und dessen Umsetzung in der Anwendung.
-%	\item Screenshots der Anwendung
-%\end{itemize}
-
-
 %Implementierung der Geschäftslogik
-
-%\begin{itemize}
-%	\item Beschreibung des Vorgehens bei der Umsetzung/Programmierung der entworfenen Anwendung.
-%	\item \Ggfs interessante Funktionen/Algorithmen im Detail vorstellen, verwendete Entwurfsmuster zeigen.
-%	\item Quelltextbeispiele zeigen.
-%	\item Hinweis: Wie in Kapitel~\ref{sec:Einleitung}: \nameref{sec:Einleitung} zitiert, wird nicht ein lauffähiges Programm bewertet, sondern die Projektdurchführung. Dennoch würde ich immer Quelltextausschnitte zeigen, da sonst Zweifel an der tatsächlichen Leistung des Prüflings aufkommen können.
-%\end{itemize}
