@@ -6,15 +6,15 @@
 \subsection{Implementierung der Geschäftslogik}
 \label{sec:ImplementierungGeschaeftslogik}
 
-
-Das Sequenzdiagramm zu diesem Prozess kann im \Anhang{app:Sequenzdiagramm} eingesehen werden.
+Der Prüfungsalgorithmus zur Bestimmung der Asynchronität der Anlage ist im AnlagenPruefungsBearbeiter.
+Jede Aktualisierungslogik ist in der Methode \gqq{Erzeuge} der jeweiligen konkreten IGlobalesAktualisierenAnlage-Klasse implementiert.
 
 \subsection{Verwendete Entwurfsmuster}
 \label{sec:Entwurfsmuster}
 
 Für die Instanziierung der einzelnen konkreten Objekte der Schnittstelle \gqq{IGlobalesAktualisierenAnlage} verwendete ich das Fabrik-Entwurfsmuster nach folgenden Schema.
 \begin{figure}
-%	\centering
+	\centering
 	\includegraphicsKeepAspectRatio{Klassendiagramm-Fabrik.png}{1}
 	\caption{Klassendiagramm zur Verwendung des Farbik-Entwurfsmusters}
 \end{figure}

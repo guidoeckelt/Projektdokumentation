@@ -22,9 +22,11 @@ Für diese Funktionalität sind keine Änderung an der \acs{GUI} nötig, da die 
 
 Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, daher ist kein neues Datenmodell erforderlich.
 
-
+\clearpage
 \subsection{Geschäftslogik}
 \label{sec:Geschaeftslogik}
+
+Das Kommando stellt die Schnittstelle zur Oberfläche zum Aufrufen der Funktionalität dar. Dieses instantiiert dann seinen Prozess, der dann wiederum seinen Ueberarbeiter instantiiert. Der Ueberarbeiter ist das zentrale Logikgerüst dieser Funktonalität. Er delegiert Prüfungs- und Aktualisierungsaufgaben an seine internen Bearbeiter, die dann je nach Aufgabe diese selbst implementieren oder an entsprechende Klasse weitergeben. Die Ausführung und Fortschrittsausgabe dieses Prozess ist in den Klassen JobgruppeAllgemein und JobAllgemein gekapselt.
 
 \begin{figure}[htb]
 	\centering
@@ -32,13 +34,13 @@ Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, da
 	\caption{Ausschnitt des Klassendiagramms}
 \end{figure}
 
-das vollständige Klassendiagramm kann im \Anhang{app:Klassendiagramm} eingesehen werden.
-
+Das vollständige Klassendiagramm kann im \Anhang{app:Klassendiagramm} eingesehen werden.
+Der Ablauf des Prozesses kann im \Anhang{app:Sequenzdiagramm} eingesehen werden.
 
 \subsection{Maßnahmen zur Qualitätssicherung}
 \label{sec:Qualitaetssicherung}
 
-Die Funktionalität "Globales Aktualisieren" wird durch die Komponententests auf korrekte Ausführung mit der Entwicklungsumgebung geprüft. Für die Einführung in die nächste Release-Version der \CBPAD werden nochmal Verbundtests, bei denen alle Funktionalitäten in Verbindung mit den anderen Anwendung der \CBP geprüft werden, durch die Abteilung durchgeführt.
+Die Funktionalität "Globales Aktualisieren" wird durch die Komponententests auf korrekte Ausführung mit der Entwicklungsumgebung geprüft. Für die Einführung in die nächste Release-Version der \CBPAD werden nochmal Verbundtests, bei denen alle Funktionalitäten in Verbindung mit den anderen Anwendung der \CBP\xspace geprüft werden, durch die Abteilung durchgeführt.
 
 
 \Zwischenstand{Entwurfsphase}{Entwurf}
