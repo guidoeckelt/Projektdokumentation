@@ -31,7 +31,7 @@ Die Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die unter an
 
 Im Hauptmenü der \acs{CBP-AD} soll ein neuer Menüeintrag bereitgestellt werden, dessen Kommando einen Aktualisierungsprozess anstößt, der alle Dokumente auf Asynchronität prüft und anschließend veraltete aktualisiert.
 
-Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Vorgehensweisen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine einheitliche Vorgehensweise umgebaut werden.
+Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Vorgehensweisen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität \gqq{Globales Aktualisieren} sollen nun alle Dokumenttypen auf eine einheitliche Vorgehensweise umgebaut werden.
 
 Erzeugungsstrukturen für einige Dokumenttypen berechnen ihren Fortschritt eigenständig und geben diesen in einer eigenen Oberfläche aus. Für diese soll eine Möglichkeit der Unterdrückung dieser Fortschrittsausgabe implementiert werden, damit der Aktualisierungsprozess „Globales Aktualisieren“ dies einheitlich für alle Dokumenttypen ausgeben kann.
 
@@ -45,7 +45,7 @@ Durch diese Erweiterung wird eine Vereinheitlichung der Dokumentenaktualisierung
 \subsection{Projektschnittstellen} 
 \label{sec:Projektschnittstellen}
 
-Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über eine \acs{HTTP}-\acs{API} der \acs{CBP-NB} angefordert.
+Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über Schnittstellen in einer \acs{DLL} der \acs{CBP-NB} angefordert.
 
 Die Benutzer der Anwendung sind die Betriebsprüfer der Deutschen Rentenversicherung.
 
