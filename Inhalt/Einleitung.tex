@@ -8,7 +8,7 @@
 \label{sec:Projektumfeld}
 
 Die \ac{DRV Bund} ist ein bundesweit tätiger Träger der gesetzlichen Rentenversicherung in der Bundesrepublik Deutschland
-mit \ca 17000 Mitarbeitern.\\
+mit \ca 17.000 Mitarbeitern.\\
 Zum Aufgabenfeld gehören:
 \begin{itemize}
 	\item Bearbeitung von Rentenanträgen und Auszahlung von Renten
@@ -17,7 +17,7 @@ Zum Aufgabenfeld gehören:
 	\item Bearbeitung von Rehabilitationsanträgen und Beaufsichtigung der Rehabilitationseinrichtungen
 \end{itemize}
 
-Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendung, um diesen Prozess zu vereinfachen.
+Für die Überprüfung von Sozialabgaben entwickelt die IT-Abteilung der \DRV verschiedene Anwendungen, um diesen Prozess zu vereinfachen.
 
 Die Betriebsprüfung
 
@@ -27,11 +27,11 @@ Die \ac{CBP-AD} ist eine Desktopanwendung mit der jeweilig benötigte Dokumente,
 \subsection{Projektziel} 
 \label{sec:Projektziel}
 
-Die Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die mit Daten aus Berechnungen der Anwendung \acs{CBP-NB} befüllt werden. Wenn in dieser Daten verändert werden, die schon in erzeugten Dokumenten vorkommen, sind diese Dokumente in einem „asynchronen“ Zustand und müssen vor Weiterverwendung aktualisiert werden.
+Die Betriebsprüfer erstellen und bearbeiten Dokumente und Anlagen, die unter anderem mit Daten aus Berechnungen der Anwendung \acs{CBP-NB} befüllt werden. Wenn Daten verändert werden, sind diese Dokumente in einem „asynchronen“ Zustand und müssen vor Weiterverwendung aktualisiert werden.
 
 Im Hauptmenü der \acs{CBP-AD} soll ein neuer Menüeintrag bereitgestellt werden, dessen Kommando einen Aktualisierungsprozess anstößt, der alle Dokumente auf Asynchronität prüft und anschließend veraltete aktualisiert.
 
-Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Strukturen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine Struktur umgebaut werden.
+Für die verschiedenen Dokumenttypen gibt es zurzeit auch noch unterschiedliche Vorgehensweisen, wie die jeweiligen Dokumente neu erzeugt werden. Für die Funktionalität „Globales Aktualisieren“ sollen nun alle Dokumenttypen auf eine einheitliche Vorgehensweise umgebaut werden.
 
 Erzeugungsstrukturen für einige Dokumenttypen berechnen ihren Fortschritt eigenständig und geben diesen in einer eigenen Oberfläche aus. Für diese soll eine Möglichkeit der Unterdrückung dieser Fortschrittsausgabe implementiert werden, damit der Aktualisierungsprozess „Globales Aktualisieren“ dies einheitlich für alle Dokumenttypen ausgeben kann.
 
@@ -47,7 +47,7 @@ Durch diese Erweiterung wird eine Vereinheitlichung der Dokumentenaktualisierung
 
 Daten aus den Berechnungen der Sozialabgaben von Betrieben und ihren Mitarbeitern werden über eine \acs{HTTP}-\acs{API} der \acs{CBP-NB} angefordert.
 
-Die Benutzer der Anwendung sind die Betriebsprüfer der \DRV.
+Die Benutzer der Anwendung sind die Betriebsprüfer der Deutschen Rentenversicherung.
 
 
 \subsection{Projektabgrenzung} 
