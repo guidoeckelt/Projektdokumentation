@@ -1,27 +1,9 @@
 % !TEX root = ../Projektdokumentation.tex
 
+\clearpage
 \section{Entwurfsphase} 
 \label{sec:Entwurfsphase}
 
-\subsection{Zielplattform}
-\label{sec:Zielplattform}
-
-\ac{CBP-AD} ist als Desktopanwendung in \acs{VB}.NET, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, auf Basis des .NET-Framework Version 2.0 implementiert.
-Sie wird als x86-Anwendung für Windows-7 entwickelt.
-
-
-\subsection{Benutzeroberfläche}
-\label{sec:Benutzeroberflaeche}
-
-Die \acs{GUI} der \ac{CBP-AD} ist, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, als Windows-Forms-Oberfläche realisiert. Das Aussehen der Steuerelemente ist durch \ac{CI} vordefiniert. Für das Einbinden in des neuen Menüeintrag, wie in \ref{sec:Projektziel}: \nameref{sec:Projektumfeld} erwähnt, ist die Instanziierung eines Objekt der Klasse \gqq{GlobalesAktualisieren} beim Starten des Programmes und ein Eintrag in der Konfigurationsdatei des Hauptmenüs notwendig. Die Konfigurationsdatei bestimmt die Position der einzelnen Menüeinträge im Hauptmenü. Für diese Funktionalität sind keine weiteren Änderung an der \acs{GUI} nötig, da die Oberfläche zur Fortschrittsausgabe schon in bereits bestehenden Klassen implementiert wurde.
-
-
-\subsection{Datenmodell}
-\label{sec:Datenmodell}
-
-Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, daher ist kein neues Datenmodell erforderlich.
-
-\clearpage
 \subsection{Geschäftslogik}
 \label{sec:Geschaeftslogik}
 
@@ -35,6 +17,24 @@ Das Kommando stellt die Schnittstelle zur Oberfläche zum Aufrufen der Funktiona
 
 Das vollständige Klassendiagramm kann im \Anhang{app:Klassendiagramm} eingesehen werden.
 Der Ablauf des Prozesses kann im \Anhang{app:Sequenzdiagramm} eingesehen werden.
+
+\subsection{Zielplattform}
+\label{sec:Zielplattform}
+
+\ac{CBP-AD} ist als Desktopanwendung in \acs{VB}.NET, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, auf Basis des .NET-Framework Version 2.0 implementiert.
+Sie wird als x86-Anwendung für Windows-7 entwickelt.
+
+
+\subsection{Benutzeroberfläche}
+\label{sec:Benutzeroberflaeche}
+
+Die \acs{GUI} der \ac{CBP-AD} ist, wie in \ref{sec:Projektumfeld}: \nameref{sec:Projektumfeld} erwähnt, als Windows-Forms-Oberfläche realisiert. Das Aussehen der Steuerelemente ist durch \ac{CI} vordefiniert. Für das Einbinden in des neuen Menüeintrag, wie in \ref{sec:Projektziel}: \nameref{sec:Projektumfeld} erwähnt, ist die Instanziierung eines Objekt der Klasse \gqq{GlobalesAktualisieren} beim Starten des Programmes und ein Eintrag in der Konfigurationsdatei des Hauptmenüs notwendig. Die Konfigurationsdatei bestimmt die Position der einzelnen Menüeinträge im Hauptmenü. Für diese Funktionalität sind keine weiteren Änderung an der \acs{GUI} nötig, da die Oberfläche zur Fortschrittsausgabe schon in bereits bestehenden Klassen implementiert wurde.
+
+\subsection{Datenmodell}
+\label{sec:Datenmodell}
+
+Die Funktionalität \gqq{\titel} beinhaltet keine Speicherung von Entitäten, daher ist kein neues Datenmodell erforderlich.
+
 
 \subsection{Maßnahmen zur Qualitätssicherung}
 \label{sec:Qualitaetssicherung}

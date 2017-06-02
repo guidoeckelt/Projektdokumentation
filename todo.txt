@@ -1,0 +1,8 @@
+- Auszug aus Fachkonzept
+- Unit-Tests im Anhang + Screenshot der bestandenen Test im Abschnitt Abnahmephase Analyse
+- ?Fazit
+
+? Eidesstattliche Erklärung
+? Einleitung - Betriebsprüfung
+? Analyse - Ist-Analyse, Amortisationsumfragen
+? Dokumentenbaumscreenshot
